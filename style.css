@@ -1,3 +1,72 @@
+.project-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #BF953F; /* Elegant gold tint accent on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-badge {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: rgba(191, 149, 63, 0.15);
+    color: #BF953F;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.project-description {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tags span {
+    background: rgba(255, 255, 255, 0.05);
+    color: #cccccc;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.project-links .live-link {
+    color: #BF953F;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.project-links .live-link:hover {
+    color: #ffcc00;
+}
+
 :root {
     --bg-color: #0a0a0a;
     --card-bg: #161616;
